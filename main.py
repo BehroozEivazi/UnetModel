@@ -7,12 +7,17 @@ import numpy as np
 
 import matplotlib.pyplot as plt
 import random
+
 TRAIN_PATH='D:/data-science-bowl/stage1_train/'
 TEST_PATH='D:/data-science-bowl/stage1_test/'
 
 IMG_WIDTH = 128
 IMG_HEIGTH = 128
 IMG_CHANNELS = 3
+seed =42
+
+np.random.seed(seed)
+np.random.seed(seed)
 
 train_ids = next(os.walk(TRAIN_PATH))[1]
 test_ids = next(os.walk(TEST_PATH))[1]
