@@ -60,10 +60,10 @@ imshow(np.squeeze(Y_train[image_x]))
 plt.show()
 
 
-# model = modelbuilder.build_model(IMG_WIDTH, IMG_HEIGTH, IMG_CHANNELS)
-# callback = modelbuilder.define_callback()
-#
-# results = model.fit(X_train, Y_train, validation_steps=0.1, callbacks=callback, batch_size=16, epochs=25)
+model = modelbuilder.build_model(IMG_WIDTH, IMG_HEIGTH, IMG_CHANNELS)
+callback = modelbuilder.define_callback()
+
+results = model.fit(X_train, Y_train, validation_steps=0.1, callbacks=callback, batch_size=16, epochs=25)
 
 
 
